@@ -13,6 +13,8 @@ namespace HotelStrategy
         public string Nume { get; set; }
 
         public string Gen { get; set; }
+
+        public string Origin { get; set; }
         
 
     }
