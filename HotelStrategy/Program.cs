@@ -15,11 +15,13 @@ namespace HotelStrategy
             var gender = Console.ReadLine();
             if (gender.ToLower() != "male" && gender.ToLower() != "female")
                 throw new Exception("Gender not recognised");
-            Console.WriteLine("Please select one of the following numbers based on your desired location to travel" +
+            Console.WriteLine("Please select one of the following numbers based on your provenance" +
             "\n 0 - America" +
             "\n 1 - Europe" +
             "\n 2 - NonEU \n");
             var destination = Console.ReadLine();
+            if (destination != "0" && destination != "1" && destination != "2")
+                throw new Exception("Provenance not valid!");
             Client client = new Client()
             { 
                   Nume = name,
