@@ -8,6 +8,6 @@ namespace HotelStrategy
 {
     public interface IModVerificare
     {
-        void verificaActe(string nume,string gender);
+        void verificaActe(string nume,string gender,string origin);
     }
 }
